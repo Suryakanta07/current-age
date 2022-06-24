@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <form method="post" action="/getage">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" value="11/01/1997" name="birthday">
+        <input type="submit">
+    </form>
+    <h1>Age of User in Different Formats</h1>
+    <h2>Full Age: <%= fullage %></h2>
+    <h2>Age in Months: <%= monthage %></h2>
+    <h2>Age in Days: <%= daysage %></h2>
+    <h2>Age in Hours: <%= hourage %></h2>
+    <h2>Age in Minutes: <%= minutesage %></h2>
+    <h2>Age in Seconds: <%= secondsage %></h2>
+</body>
+</html>
